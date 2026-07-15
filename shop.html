@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>商店 — KIRASORA</title>
+  <meta name="description" content="KIRASORA 官方周邊商店。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 動態背景 -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--blue" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--red" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--purple" aria-hidden="true"></div>
+  <div class="bg-scan" aria-hidden="true"></div>
+
+  <!-- 導覽列 -->
+  <header class="nav nav--scrolled" id="nav">
+    <a href="index.html" class="nav__brand"><span class="nav__logo">K</span>IRASORA</a>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html" class="nav__link" data-i18n="nav.home">首頁</a>
+      <a href="members.html" class="nav__link" data-i18n="nav.members">成員</a>
+      <a href="music.html" class="nav__link" data-i18n="nav.music">音樂</a>
+      <a href="news.html" class="nav__link" data-i18n="nav.news">動態</a>
+      <a href="shop.html" class="nav__link is-active" data-i18n="nav.shop">商店</a>
+    </nav>
+    <div class="nav__actions">
+    <button class="nav__lang" id="langBtn" type="button" aria-label="切換語言" data-i18n-attr="aria-label:nav.lang">繁</button>
+    <button class="nav__toggle" id="navToggle" aria-label="選單" data-i18n-attr="aria-label:nav.menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- 頁面標題 -->
+  <section class="page-hero page-hero--shop">
+    <p class="page-hero__kicker">MERCH</p>
+    <h1 class="page-hero__title" data-i18n="shop.title">商店</h1>
+    <p class="page-hero__lead" data-i18n="shop.lead">把霓虹帶回家。</p>
+  </section>
+
+  <!-- 商店：建設中 -->
+  <section class="section" id="shop">
+    <div class="shop-building reveal">
+      <span class="shop-building__icon" aria-hidden="true">&#9881;</span>
+      <h2 class="shop-building__title" data-i18n="shop.buildingTitle">建設中</h2>
+      <p class="shop-building__sub" data-i18n="shop.buildingSub">COMING SOON</p>
+      <p class="shop-building__text" data-i18n="shop.buildingText">我們正在為你打造 KIRASORA 官方周邊——霓虹 T-Shirt、成員徽章、實體唱片與更多。商店即將開張，敬請期待。</p>
+      <a href="index.html#subscribe" class="btn btn--ghost btn--sm" data-i18n="shop.buildingBtn">訂閱開張通知</a>
+    </div>
+  </section>
+
+  <!-- 頁尾 -->
+  <footer class="footer">
+    <div class="footer__brand">KIRASORA</div>
+    <nav class="footer__social">
+      <a href="https://www.facebook.com/kirasora.official" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+      <a href="https://www.instagram.com/kirasora.band/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+      <a href="https://x.com/Kirasora_offcl" target="_blank" rel="noopener" aria-label="X">X</a>
+    </nav>
+    <nav class="footer__links">
+      <a href="privacy.html" data-i18n="footer.privacy">私隱政策 Privacy Policy</a>
+    </nav>
+    <p class="footer__copy">&copy; 2026 Kirasora</p>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

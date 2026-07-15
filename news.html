@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>最新動態 — KIRASORA</title>
+  <meta name="description" content="KIRASORA 最新動態：官網上線、單曲發佈、企劃啟動。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- ===== Google AdSense（手動廣告單元 · 固定位置）===== -->
+  <!-- TODO: 把 ca-pub-XXXXXXXXXXXXXXXX 換成你真實的發佈商 ID，並在 AdSense 後台開啟 Auto Ads -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+          crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- 動態背景 -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--blue" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--red" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--purple" aria-hidden="true"></div>
+  <div class="bg-scan" aria-hidden="true"></div>
+
+  <!-- 導覽列 -->
+  <header class="nav nav--scrolled" id="nav">
+    <a href="index.html" class="nav__brand"><span class="nav__logo">K</span>IRASORA</a>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html" class="nav__link" data-i18n="nav.home">首頁</a>
+      <a href="members.html" class="nav__link" data-i18n="nav.members">成員</a>
+      <a href="music.html" class="nav__link" data-i18n="nav.music">音樂</a>
+      <a href="news.html" class="nav__link is-active" data-i18n="nav.news">動態</a>
+      <a href="shop.html" class="nav__link" data-i18n="nav.shop">商店</a>
+    </nav>
+    <div class="nav__actions">
+    <button class="nav__lang" id="langBtn" type="button" aria-label="切換語言" data-i18n-attr="aria-label:nav.lang">繁</button>
+    <button class="nav__toggle" id="navToggle" aria-label="選單" data-i18n-attr="aria-label:nav.menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- 頁面標題 -->
+  <section class="page-hero">
+    <p class="page-hero__kicker">LATEST</p>
+    <h1 class="page-hero__title" data-i18n="news.title">最新動態</h1>
+    <p class="page-hero__lead" data-i18n="news.lead">樂團企劃的每一步，都在這裡留下光跡。</p>
+  </section>
+
+  <!-- 廣告位（AdSense 手動單元 · 固定位置：上方） -->
+  <div class="ad-slot reveal" aria-label="廣告">
+    <span class="ad-slot__label" data-i18n="ad.label">廣告 · ADVERTISEMENT</span>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="0000000000"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- 最新動態 -->
+  <section class="section" id="news">
+    <div class="timeline">
+      <article class="news reveal">
+        <p class="news__date">2026.07</p>
+        <h3 class="news__title" data-i18n="news.1title">英文及國語單歌發佈，官網正式上線</h3>
+        <p class="news__text" data-i18n="news.1text">樂團推出英文與國語版本單曲，官方網站同步正式上線，讓霓虹照亮更多角落。</p>
+      </article>
+      <article class="news reveal">
+        <p class="news__date">2026.06</p>
+        <h3 class="news__title" data-i18n="news.2title">首支單曲《渡》正式發佈</h3>
+        <p class="news__text" data-i18n="news.2text">KIRASORA 首支單曲《渡》於各大串流平台上線，是樂團邁出賽博夜空的第一步。</p>
+      </article>
+      <article class="news reveal">
+        <p class="news__date">2026.05</p>
+        <h3 class="news__title" data-i18n="news.3title">KIRASORA 企劃啟動</h3>
+        <p class="news__text" data-i18n="news.3text">一支來自賽博夜空的樂團正式立項，目標是把青春熱血寫進每一幀霓虹裡。</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 廣告位（AdSense 手動單元 · 固定位置：下方） -->
+  <div class="ad-slot reveal" aria-label="廣告">
+    <span class="ad-slot__label" data-i18n="ad.label">廣告 · ADVERTISEMENT</span>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="0000000000"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- 頁尾 -->
+  <footer class="footer">
+    <div class="footer__brand">KIRASORA</div>
+    <nav class="footer__social">
+      <a href="https://www.facebook.com/kirasora.official" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+      <a href="https://www.instagram.com/kirasora.band/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+      <a href="https://x.com/Kirasora_offcl" target="_blank" rel="noopener" aria-label="X">X</a>
+    </nav>
+    <nav class="footer__links">
+      <a href="privacy.html" data-i18n="footer.privacy">私隱政策 Privacy Policy</a>
+    </nav>
+    <p class="footer__copy">&copy; 2026 Kirasora</p>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>音樂作品 — KIRASORA</title>
+  <meta name="description" content="KIRASORA 音樂作品：不枉這青春、跑！哩班人好痴線、派對、渡、未存在過。於 Spotify、Apple Music、KKBOX 等平台收聽。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- ===== Google AdSense（手動廣告單元 · 固定位置）===== -->
+  <!-- TODO: 把 ca-pub-XXXXXXXXXXXXXXXX 換成你真實的發佈商 ID，並在 AdSense 後台開啟 Auto Ads -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+          crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- 動態背景 -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--blue" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--red" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--purple" aria-hidden="true"></div>
+  <div class="bg-scan" aria-hidden="true"></div>
+
+  <!-- 導覽列 -->
+  <header class="nav nav--scrolled" id="nav">
+    <a href="index.html" class="nav__brand"><span class="nav__logo">K</span>IRASORA</a>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html" class="nav__link" data-i18n="nav.home">首頁</a>
+      <a href="members.html" class="nav__link" data-i18n="nav.members">成員</a>
+      <a href="music.html" class="nav__link is-active" data-i18n="nav.music">音樂</a>
+      <a href="news.html" class="nav__link" data-i18n="nav.news">動態</a>
+      <a href="shop.html" class="nav__link" data-i18n="nav.shop">商店</a>
+    </nav>
+    <div class="nav__actions">
+    <button class="nav__lang" id="langBtn" type="button" aria-label="切換語言" data-i18n-attr="aria-label:nav.lang">繁</button>
+    <button class="nav__toggle" id="navToggle" aria-label="選單" data-i18n-attr="aria-label:nav.menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- 頁面標題 -->
+  <section class="page-hero page-hero--alt">
+    <p class="page-hero__kicker">DISCOGRAPHY</p>
+    <h1 class="page-hero__title" data-i18n="music.title">音樂作品</h1>
+    <p class="page-hero__lead" data-i18n="music.lead">從天台到地下通道，每一首都是不肯熄滅的霓虹。</p>
+  </section>
+
+  <!-- 音樂作品 -->
+  <section class="section section--alt" id="music">
+    <div class="tracks-grid">
+      <article class="track-card reveal">
+        <a class="track-card__cover" href="lyrics.html?song=bu-wang-zhe-qing-chun">
+          <img src="assets/not-wasting-youth.jpg" alt="不枉這青春 單曲封面" />
+        </a>
+        <div class="track-card__body">
+          <h3 class="track-card__title">不枉這青春</h3>
+          <a class="track-card__play" href="https://open.spotify.com/track/1HhZAaHtLNNIlfBJ6vW89x?si=11b059dc06544071" target="_blank" rel="noopener">▶ 試聽</a>
+        </div>
+      </article>
+
+      <article class="track-card reveal">
+        <a class="track-card__cover" href="lyrics.html?song=pao-lii-ban-yan-hou-ci-sin">
+          <img src="assets/pao-lii-ban-yan-hou-ci-sin.jpg" alt="跑！哩班人好痴線 單曲封面" />
+        </a>
+        <div class="track-card__body">
+          <h3 class="track-card__title">跑！哩班人好痴線</h3>
+          <a class="track-card__play" href="https://open.spotify.com/track/7mUxAQLf8FTvGYwix58Oh2?si=f666e9d123944d69" target="_blank" rel="noopener">▶ 試聽</a>
+        </div>
+      </article>
+
+      <article class="track-card reveal">
+        <a class="track-card__cover" href="lyrics.html?song=pai-dui">
+          <img src="assets/pai-dui.jpg" alt="派對 單曲封面" />
+        </a>
+        <div class="track-card__body">
+          <h3 class="track-card__title">派對</h3>
+          <a class="track-card__play" href="https://open.spotify.com/track/6lsPvnpfXMD9QdbX1kCB7Q?si=b3c20448c7e94ee8" target="_blank" rel="noopener">▶ 試聽</a>
+        </div>
+      </article>
+
+      <article class="track-card reveal">
+        <a class="track-card__cover" href="lyrics.html?song=dou">
+          <img src="assets/dou.jpg" alt="渡 單曲封面" />
+        </a>
+        <div class="track-card__body">
+          <h3 class="track-card__title">渡</h3>
+          <a class="track-card__play" href="https://open.spotify.com/track/3KSna7HPaEsllroLXkYWxt?si=f5fb00717c32445e" target="_blank" rel="noopener">▶ 試聽</a>
+        </div>
+      </article>
+
+      <article class="track-card reveal">
+        <a class="track-card__cover" href="lyrics.html?song=mei-cun-zoi-gwo">
+          <img src="assets/mei-cun-zoi-gwo.jpg" alt="未存在過" loading="lazy">
+        </a>
+        <div class="track-card__body">
+          <h3 class="track-card__title">未存在過</h3>
+          <a class="track-card__play" href="https://open.spotify.com/track/3F9AGPDPa020mpDmgGG1fn?si=d97edbb3260f406d" target="_blank" rel="noopener">▶ 試聽</a>
+        </div>
+      </article>
+    </div>
+
+    <!-- 各平台收聽 -->
+    <div class="listen reveal">
+      <p class="listen__title" data-i18n="music.listenTitle">在各平台收聽</p>
+      <div class="listen__links">
+        <a class="listen__link" href="https://music.apple.com/hk/artist/kirasora/1896743059" target="_blank" rel="noopener">Apple Music</a>
+        <a class="listen__link" href="https://open.spotify.com/artist/0cV2lEdnzrEBOM6gCFncQH" target="_blank" rel="noopener">Spotify</a>
+        <a class="listen__link" href="https://music.amazon.com/artists/B0G3MGJP3Z/kirasora" target="_blank" rel="noopener">Amazon Music</a>
+        <a class="listen__link" href="https://kkbox.fm/mp4TuW" target="_blank" rel="noopener">KKBOX</a>
+        <a class="listen__link" href="https://soundcloud.com/kirasora" target="_blank" rel="noopener">SoundCloud</a>
+        <a class="listen__link" href="https://music.youtube.com/channel/UCd63vVrddWf1cQ_mevqMqmg" target="_blank" rel="noopener">YouTube Music</a>
+        <a class="listen__link" href="https://www.joox.com/hk/artist/Uv6NN9OvkbCkGbbrpNldjQ==" target="_blank" rel="noopener">JOOX</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 廣告位（AdSense 手動單元 · 固定位置） -->
+  <div class="ad-slot reveal" aria-label="廣告">
+    <span class="ad-slot__label" data-i18n="ad.label">廣告 · ADVERTISEMENT</span>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="0000000000"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- 頁尾 -->
+  <footer class="footer">
+    <div class="footer__brand">KIRASORA</div>
+    <nav class="footer__social">
+      <a href="https://www.facebook.com/kirasora.official" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+      <a href="https://www.instagram.com/kirasora.band/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+      <a href="https://x.com/Kirasora_offcl" target="_blank" rel="noopener" aria-label="X">X</a>
+    </nav>
+    <nav class="footer__links">
+      <a href="privacy.html" data-i18n="footer.privacy">私隱政策 Privacy Policy</a>
+    </nav>
+    <p class="footer__copy">&copy; 2026 Kirasora</p>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>歌詞 — KIRASORA</title>
+  <meta name="description" content="KIRASORA 歌曲歌詞。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- ===== Google AdSense（手動廣告單元 · 固定位置）===== -->
+  <!-- TODO: 把 ca-pub-XXXXXXXXXXXXXXXX 換成你真實的發佈商 ID，並在 AdSense 後台開啟 Auto Ads -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+          crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- 動態背景 -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--blue" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--red" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--purple" aria-hidden="true"></div>
+  <div class="bg-scan" aria-hidden="true"></div>
+
+  <!-- 導覽列 -->
+  <header class="nav nav--scrolled" id="nav">
+    <a href="index.html" class="nav__brand"><span class="nav__logo">K</span>IRASORA</a>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html" class="nav__link" data-i18n="nav.home">首頁</a>
+      <a href="members.html" class="nav__link" data-i18n="nav.members">成員</a>
+      <a href="music.html" class="nav__link is-active" data-i18n="nav.music">音樂</a>
+      <a href="news.html" class="nav__link" data-i18n="nav.news">動態</a>
+      <a href="shop.html" class="nav__link" data-i18n="nav.shop">商店</a>
+    </nav>
+    <div class="nav__actions">
+    <button class="nav__lang" id="langBtn" type="button" aria-label="切換語言" data-i18n-attr="aria-label:nav.lang">繁</button>
+    <button class="nav__toggle" id="navToggle" aria-label="選單" data-i18n-attr="aria-label:nav.menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- 頁面標題 -->
+  <section class="page-hero page-hero--alt">
+    <p class="page-hero__kicker">LYRICS</p>
+    <h1 class="page-hero__title" id="lyricTitle">—</h1>
+  </section>
+
+  <!-- 歌詞 -->
+  <section class="section" id="lyric">
+    <div class="lyric">
+      <div class="lyric__cover" id="lyricCoverBox">
+        <img id="lyricCover" src="" alt="" />
+        <span class="lyric__ph" id="lyricPh" style="display:none;"></span>
+      </div>
+      <div class="lyric__body">
+        <a class="lyric__back" href="music.html" data-i18n="lyrics.back">← 返回音樂</a>
+        <p class="lyric__credit" id="lyricCredit"></p>
+        <pre class="lyric__text" id="lyricText"></pre>
+        <a class="lyric__play" id="lyricPlay" href="#" target="_blank" rel="noopener" data-i18n="lyrics.listen">▶ 試聽</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 廣告位（AdSense 手動單元 · 固定位置：歌詞頁底部） -->
+  <div class="ad-slot reveal" aria-label="廣告">
+    <span class="ad-slot__label" data-i18n="ad.label">廣告 · ADVERTISEMENT</span>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="0000000000"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- 頁尾 -->
+  <footer class="footer">
+    <div class="footer__brand">KIRASORA</div>
+    <nav class="footer__social">
+      <a href="https://www.facebook.com/kirasora.official" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+      <a href="https://www.instagram.com/kirasora.band/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+      <a href="https://x.com/Kirasora_offcl" target="_blank" rel="noopener" aria-label="X">X</a>
+    </nav>
+    <nav class="footer__links">
+      <a href="privacy.html" data-i18n="footer.privacy">私隱政策 Privacy Policy</a>
+    </nav>
+    <p class="footer__copy">&copy; 2026 Kirasora</p>
+  </footer>
+
+  <script src="lyrics-data.js"></script>
+  <script>
+    (function () {
+      var params = new URLSearchParams(location.search);
+      var id = params.get('song') || 'bu-wang-zhe-qing-chun';
+      var data = (window.KIRASORA_LYRICS && window.KIRASORA_LYRICS[id]) || null;
+      var titleEl = document.getElementById('lyricTitle');
+      var coverBox = document.getElementById('lyricCoverBox');
+      var coverImg = document.getElementById('lyricCover');
+      var phEl = document.getElementById('lyricPh');
+      var textEl = document.getElementById('lyricText');
+      var playEl = document.getElementById('lyricPlay');
+      var creditEl = document.getElementById('lyricCredit');
+
+      if (!data) { titleEl.textContent = '—'; textEl.textContent = '（找不到這首歌）'; return; }
+
+      titleEl.textContent = data.title;
+      document.title = data.title + ' — 歌詞 · KIRASORA';
+      textEl.textContent = data.lyrics || '（歌詞整理中）';
+      playEl.href = data.spotify || '#';
+      creditEl.textContent = data.credit || '';
+      creditEl.style.display = data.credit ? '' : 'none';
+
+      if (data.cover) {
+        coverImg.src = data.cover;
+        coverImg.alt = data.title + ' 封面';
+        coverImg.style.display = '';
+        phEl.style.display = 'none';
+        coverBox.classList.remove('is-ph');
+      } else {
+        coverImg.style.display = 'none';
+        phEl.textContent = data.title;
+        phEl.style.display = '';
+        coverBox.classList.add('is-ph');
+      }
+    })();
+  </script>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# ===== KIRASORA 網站 =====
+# 不上傳 WorkBuddy 內部記憶/工作資料（含內部偏好與決策紀錄）
+.workbuddy/
+
+# macOS 系統檔
+.DS_Store
