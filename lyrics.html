@@ -70,12 +70,13 @@
     <p class="footer__copy">&copy; 2026 Kirasora</p>
   </footer>
 
-  <script src="lyrics-data.js"></script>
+  <script src="lyrics-data.js?v=20260727e"></script>
   <script>
     (function () {
       var params = new URLSearchParams(location.search);
       var id = params.get('song') || 'bu-wang-zhe-qing-chun';
-      var data = (window.KIRASORA_LYRICS && window.KIRASORA_LYRICS[id]) || null;
+      var catalog = window.KIRASORA_LYRICS || {};
+      var data = catalog[id] || null;
       var titleEl = document.getElementById('lyricTitle');
       var coverBox = document.getElementById('lyricCoverBox');
       var coverImg = document.getElementById('lyricCover');
@@ -84,7 +85,13 @@
       var playEl = document.getElementById('lyricPlay');
       var creditEl = document.getElementById('lyricCredit');
 
-      if (!data) { titleEl.textContent = '—'; textEl.textContent = '（找不到這首歌）'; return; }
+      if (!data) {
+        titleEl.textContent = '—';
+        textEl.textContent = '（找不到這首歌）';
+        if (playEl) playEl.style.display = 'none';
+        console.warn('[lyrics] missing song id:', id, 'known:', Object.keys(catalog));
+        return;
+      }
 
       titleEl.textContent = data.title;
       document.title = data.title + ' — 歌詞 · KIRASORA';

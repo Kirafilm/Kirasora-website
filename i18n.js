@@ -28,6 +28,8 @@
     "index.releaseTag": { "zh-TW": "最新單曲 · 2026", "zh-CN": "最新单曲 · 2026", "en": "Latest Single · 2026" },
     "index.releaseDesc": { "zh-TW": "在霓虹熄滅之前，燃盡這一夜。KIRASORA 的第一聲正式響起。", "zh-CN": "在霓虹熄灭之前，燃尽这一夜。KIRASORA 的第一声正式响起。", "en": "Before the neon fades, burn through this night. KIRASORA's first voice rings out." },
     "index.releasePlay": { "zh-TW": "▶ 於 Spotify 試聽", "zh-CN": "▶ 于 Spotify 试听", "en": "▶ Listen on Spotify" },
+    "index.playlistTitle": { "zh-TW": "推薦曲目", "zh-CN": "推荐曲目", "en": "Recommended Tracks" },
+    "index.listenTitle": { "zh-TW": "在各平台收聽", "zh-CN": "在各平台收听", "en": "Listen on all platforms" },
     "index.listenMore": { "zh-TW": "查看全部曲目 →", "zh-CN": "查看全部曲目 →", "en": "View all tracks →" },
     "index.newsTitle": { "zh-TW": "最新動態", "zh-CN": "最新动态", "en": "Latest News" },
     "index.news1Title": { "zh-TW": "英文及國語單歌發佈，官網正式上線", "zh-CN": "英文及国语单曲发布，官网正式上线", "en": "English & Mandarin singles released, official site launched" },
